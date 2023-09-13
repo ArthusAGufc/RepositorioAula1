@@ -1,6 +1,5 @@
 # RepositorioAula1
-Repositório aula 1
-salve salve
-é isso po
-adahwdo
-ehehehee
+
+ta ai ó mexi no readme
+
+
