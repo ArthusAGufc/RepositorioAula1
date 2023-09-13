@@ -14,22 +14,34 @@ def listar_produtos():
     print("Lista de Produtos:")
     for nome, info in produtos.items():
         print(f"Nome: {nome}, Preço: R${info['preco']}, Quantidade em Estoque: {info['quantidade']}")
+		
+# Função para deletar produtos
+def deletar_produto():
+    print("Lista de Produtos:")
+    for nome, info in produtos.items():
+        print(f"Nome: {nome}, Preço: R${info['preco']}, Quantidade em Estoque: {info['quantidade']}")
+    produtoDeletar = input("Digite o nome do produto para ser deletado: ")
+    del(produtos[produtoDeletar])
+    print(f"{produtoDeletar} deletado com sucesso!")
 
 # Função principal
 def main():
     while True:
         print("\nOpções:")
         print("1. Cadastrar novo produto")
-        print("2. Listar produtos")
-        print("3. Sair")
+        print("2. Deletar produto")
+        print("3. Listar produtos")
+        print("4. Sair")
 
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
             cadastrar_produto()
         elif opcao == "2":
-            listar_produtos()
+            deletar_produto()
         elif opcao == "3":
+            listar_produtos()
+        elif opcao == "4":
             print("Saindo do programa.")
             break
         else:
@@ -37,3 +49,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+0
