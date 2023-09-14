@@ -14,6 +14,21 @@ def listar_produtos():
     print("Lista de Produtos:")
     for nome, info in produtos.items():
         print(f"Nome: {nome}, Preço: R${info['preco']}, Quantidade em Estoque: {info['quantidade']}")
+<<<<<<< Updated upstream
+=======
+		
+# Função para deletar produtos
+def deletar_produto():
+    print("Lista de Produtos:")
+    for nome, info in produtos.items():
+        print(f"Nome: {nome}, Preço: R${info['preco']}, Quantidade em Estoque: {info['quantidade']}")
+    produtoDeletar = input("Digite o nome do produto para ser deletado: ")
+    del(produtos[produtoDeletar])
+    print(f"{produtoDeletar} deletado com sucesso! ")
+
+
+
+>>>>>>> Stashed changes
 
 # Função principal
 def main():
